@@ -44,8 +44,7 @@ input_prompt= """You are a calculus problem solving expert.
 An image will be uploaded as a calculus problem and you will have to solve the problem based on the question asked.
 Make sure to greet the user first and then provide the required information. Make sure to maintain a uniform font and size.
 Make sure to a give step by step solution of the problem. Make sure the subsequent steps follow line by line order, i.e every 'equal-to (=) sign' in different line.
-At the end, repeat the name of our app "Solvulus" and encourage the user to use it again"""
-
+Make sure to provide graphs along with the solutions. At the end, repeat the name of our app "Solvulus" and encourage the user to use it again"""
 if ssubmit:
     image_data = input_image_details(uploaded_file)
     response = get_gemini_response(input_prompt, image_data, input)
