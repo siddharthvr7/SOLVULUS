@@ -37,7 +37,7 @@ uploaded_file = st.file_uploader("Upload image of the problem" , type=["jpg","jp
 
 if uploaded_file is not None:
     image = Image.open(uploaded_file)
-    st.image(image, caption="Uploaded Image", use_column_width=True)
+    st.image(image, caption="Uploaded Image", use_container_width=True)
 
 input_prompt= """You are a calculus problem solving expert. 
 An image will be uploaded as a calculus problem and you will have to solve the problem based on the question asked.
