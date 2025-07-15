@@ -29,7 +29,7 @@ st.sidebar.header("Your Calculus Problem Solver")
 st.sidebar.write("Made by Sid")
 st.sidebar.write("Powered by Google Gemini AI")
 st.header("Solvulus")
-st.subheader("Calculus made ezee!")
+st.subheader("Calculus made easy!")
 
 input = st.text_input("What do you want me to do?" , key="input")
 uploaded_file = st.file_uploader("Select image of the problem" , type=["jpg","jpeg","png"])
