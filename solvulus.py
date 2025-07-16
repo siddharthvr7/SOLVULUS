@@ -41,6 +41,9 @@ if uploaded_file is not None:
 
 input_prompt= """You are a calculus problem solving expert. 
 An image will be uploaded as a calculus problem and you will have to solve the problem based on the question asked.
+Solve the given calculus problem step-by-step using proper math notation in LaTeX.
+Format all expressions using LaTeX-style syntax (e.g., x^2, \int, fractions).
+Do not use HTML tags like <sub> or <sup>.
 Make sure to greet the user first and then provide the required information. Make sure to maintain a uniform font and size.
 Make sure to a give step by step solution of the problem. Make sure the subsequent steps follow line by line order, i.e every 'equal-to (=) sign' in different line.
 At the end, repeat the name of our app "Solvulus" and encourage the user to use it again"""
@@ -57,7 +60,7 @@ if st.button("🚀 Let's Go!"):
             with st.spinner("Solving your problem..."):
                 response = get_gemini_response(input_prompt, image_data, input)
             st.subheader("✅ Here's your solution:")
-            st.markdown(f"```markdown\n{response}\n```")
+            st.latex(f"```markdown\n{response}\n```")
             st.success("Solved with Solvulus. Come back anytime!")
         except Exception as e:
             st.error(f"An error occurred: {str(e)}")
