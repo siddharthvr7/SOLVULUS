@@ -1,25 +1,17 @@
-# 📦 Streamlit App Starter Kit 
-```
-⬆️ (Replace above with your app's name)
-```
+Solvulus – AI-Powered Calculus Solver
 
-Description of the app ...
+Solvulus is a simple yet powerful web app that helps users solve calculus problems by uploading images of the question. Built with Streamlit and powered by Google's Gemini AI, the app extracts problems from images and provides detailed, step-by-step solutions — like a personal tutor in your browser.
 
-## Demo App
+Features
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://app-starter-kit.streamlit.app/)
+📸 Upload an image of a calculus problem (JPG, JPEG, PNG)
+🤖 Get a step-by-step solution using Google's Gemini AI
+⏱️ Fast and accurate explanations with clear formatting
+🎯 Easy-to-use interface (built with Streamlit)
+🔒 API key managed securely via .env and Streamlit Cloud secrets
+Tech Stack
 
-## GitHub Codespaces
-
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/streamlit/app-starter-kit?quickstart=1)
-
-## Section Heading
-
-This is filler text, please replace this with text for this section.
-
-## Further Reading
-
-This is filler text, please replace this with a explanatory text about further relevant resources for this repo
-- Resource 1
-- Resource 2
-- Resource 3
+Frontend/UI: Streamlit
+Backend AI: Google Gemini API
+Image Handling: Pillow (PIL)
+API Management: python-dotenv
