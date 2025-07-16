@@ -26,7 +26,7 @@ def input_image_details(uploaded_file):
     else:
         raise FileNotFoundError("No file uploaded")
     
-st.set_page_config(page_title="Solvulus")
+st.set_page_config(page_title="Solvulus🧮")
 st.sidebar.header("🧠 Your Calculus Problem Solver")
 st.sidebar.write("Powered by **Google Gemini AI**")
 st.header("Solvulus")
